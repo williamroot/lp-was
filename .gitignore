@@ -8,3 +8,4 @@ npm-debug.log*
 
 # Artefatos de verificação local
 .playwright-mcp/
+shots/
