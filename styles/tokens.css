@@ -1,0 +1,102 @@
+/* ============================================================
+   WAS — Design Tokens (espelho do was-design-system)
+   Marca monocromática (preto/branco) + acento cobalto.
+   Mantém paridade com src/tokens/tokens.css do Design System.
+   ============================================================ */
+:root {
+  /* --- Neutros (cool) --- */
+  --was-ink-900: #0A0B0D;
+  --was-ink-800: #16181C;
+  --was-ink-700: #232730;
+  --was-ink-600: #353A45;
+  --was-ink-500: #565D6B;
+  --was-ink-400: #7C8494;
+  --was-ink-300: #A9B0BD;
+  --was-ink-200: #D2D7DF;
+  --was-ink-100: #E9ECF1;
+  --was-ink-50:  #F5F7FA;
+  --was-paper:   #FFFFFF;
+
+  /* --- Acento da marca (cobalto) --- */
+  --was-brand:        #2F5BFF;
+  --was-brand-strong: #1E40E6;
+  --was-brand-fg:     #FFFFFF;
+  --was-brand-soft:   #EAEFFF;
+  --was-brand-soft-fg:#1E40E6;
+
+  /* --- Semânticas --- */
+  --was-success: #16A34A; --was-success-soft: #DCFCE7; --was-success-fg: #15803D;
+  --was-warning: #D97706; --was-warning-soft: #FEF3C7; --was-warning-fg: #B45309;
+  --was-danger:  #DC2626; --was-danger-soft:  #FEE2E2; --was-danger-fg:  #B91C1C;
+
+  /* --- Tipografia --- */
+  --was-font-display: 'Bricolage Grotesque', system-ui, sans-serif;
+  --was-font-body:    'Hanken Grotesk', system-ui, sans-serif;
+  --was-font-mono:    'Spline Sans Mono', ui-monospace, monospace;
+
+  --was-fs-display: 3rem;     /* 48 */
+  --was-fs-h1:      2.25rem;  /* 36 */
+  --was-fs-h2:      1.75rem;  /* 28 */
+  --was-fs-h3:      1.375rem; /* 22 */
+  --was-fs-h4:      1.125rem; /* 18 */
+  --was-fs-body-lg: 1.125rem; /* 18 */
+  --was-fs-body:    1rem;     /* 16 */
+  --was-fs-sm:      0.875rem; /* 14 */
+  --was-fs-caption: 0.75rem;  /* 12 */
+
+  --was-fw-regular: 400;
+  --was-fw-medium: 500;
+  --was-fw-semibold: 600;
+  --was-fw-bold: 700;
+
+  /* --- Espaçamento (base 4px) --- */
+  --was-space-1: 4px;  --was-space-2: 8px;  --was-space-3: 12px;
+  --was-space-4: 16px; --was-space-5: 20px; --was-space-6: 24px;
+  --was-space-8: 32px; --was-space-10: 40px; --was-space-12: 48px; --was-space-16: 64px;
+
+  /* --- Raios (eco da base arredondada do W) --- */
+  --was-radius-sm: 6px; --was-radius-md: 10px; --was-radius-lg: 16px;
+  --was-radius-xl: 24px; --was-radius-full: 999px;
+
+  /* --- Sombras --- */
+  --was-shadow-sm: 0 1px 2px rgba(10,11,13,.06);
+  --was-shadow-md: 0 4px 16px rgba(10,11,13,.08);
+  --was-shadow-lg: 0 12px 32px rgba(10,11,13,.14);
+
+  /* --- Movimento --- */
+  --was-ease-out: cubic-bezier(.2,.7,.2,1);
+  --was-dur-fast: 120ms; --was-dur-base: 200ms; --was-dur-slow: 320ms;
+
+  /* --- Aliases semânticos (tema claro) --- */
+  --was-bg:            var(--was-paper);
+  --was-surface:       var(--was-paper);
+  --was-surface-2:     var(--was-ink-50);
+  --was-fg:            var(--was-ink-900);
+  --was-fg-muted:      var(--was-ink-500);
+  --was-fg-subtle:     var(--was-ink-400);
+  --was-border:        var(--was-ink-100);
+  --was-border-strong: var(--was-ink-200);
+  --was-focus-ring:    rgba(47,91,255,.35);
+}
+
+[data-theme="dark"] {
+  --was-bg:            var(--was-ink-900);
+  --was-surface:       var(--was-ink-800);
+  --was-surface-2:     var(--was-ink-700);
+  --was-fg:            #F5F7FA;
+  --was-fg-muted:      var(--was-ink-300);
+  --was-fg-subtle:     var(--was-ink-400);
+  --was-border:        var(--was-ink-700);
+  --was-border-strong: var(--was-ink-600);
+
+  --was-brand:         #5B7CFF;
+  --was-brand-strong:  #7C97FF;
+  --was-brand-soft:    #19224A;
+  --was-brand-soft-fg: #A8BBFF;
+
+  --was-success-soft: #0E2E1C; --was-success-fg: #6FE3A0;
+  --was-warning-soft: #36260A; --was-warning-fg: #F4C168;
+  --was-danger-soft:  #3A1414; --was-danger-fg:  #FCA5A5;
+
+  --was-focus-ring:   rgba(91,124,255,.45);
+}

@@ -1,0 +1,20 @@
+/* Reset — espelho de src/styles/reset.css do Design System WAS */
+*, *::before, *::after { box-sizing: border-box; }
+* { margin: 0; }
+html { scroll-behavior: smooth; }
+html, body { height: 100%; }
+body {
+  font-family: var(--was-font-body);
+  font-size: var(--was-fs-body);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  color: var(--was-fg);
+  background: var(--was-bg);
+}
+img, svg { display: block; max-width: 100%; }
+button, input, select, textarea { font: inherit; color: inherit; }
+a { color: inherit; }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation-duration: .001ms !important; transition-duration: .001ms !important; }
+}

@@ -1,0 +1,10 @@
+# Segredos
+.env
+
+# Sistema
+.DS_Store
+*.log
+npm-debug.log*
+
+# Artefatos de verificação local
+.playwright-mcp/

@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WAS — Soluções em Tecnologia · Consultoria em Desenvolvimento, IA e Automação</title>
+  <meta name="description" content="WAS Soluções em Tecnologia: consultoria em desenvolvimento de software, inteligência artificial e automação de processos. Transformamos operações em sistemas inteligentes e eficientes." />
+  <meta name="theme-color" content="#2F5BFF" />
+  <link rel="canonical" href="https://was.dev.br/" />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <meta property="og:image" content="https://was.dev.br/assets/favicon.svg" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="WAS — Soluções em Tecnologia" />
+  <meta property="og:description" content="Consultoria em desenvolvimento, IA e automação de processos. Inteligência no uso de recursos." />
+  <meta property="og:url" content="https://was.dev.br/" />
+  <meta property="og:locale" content="pt_BR" />
+
+  <!-- Fonts + tokens (espelho do was-design-system) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Hanken+Grotesk:wght@400;500;600;700&family=Spline+Sans+Mono:wght@400;500;600&display=swap" />
+  <link rel="stylesheet" href="styles/tokens.css" />
+  <link rel="stylesheet" href="styles/reset.css" />
+  <link rel="stylesheet" href="styles/main.css" />
+
+  <!-- Evita "flash" de tema antes do JS -->
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem("was-theme") ||
+          (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+        document.documentElement.setAttribute("data-theme", t);
+      } catch (e) {}
+    })();
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "WAS — Soluções em Tecnologia",
+    "url": "https://was.dev.br",
+    "email": "contato@was.dev.br",
+    "description": "Consultoria em desenvolvimento de software, inteligência artificial e automação de processos.",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "email": "contato@was.dev.br",
+      "contactType": "comercial",
+      "availableLanguage": ["Portuguese"]
+    }
+  }
+  </script>
+</head>
+<body>
+  <!-- ============================ HEADER ============================ -->
+  <header class="site-header">
+    <div class="container">
+      <a class="brand-lockup" href="#top" aria-label="WAS — Soluções em Tecnologia">
+        <svg viewBox="0 0 132 110" height="34" width="40.8" fill="none" stroke="currentColor"
+             stroke-width="20" stroke-linejoin="round" role="img" aria-hidden="true">
+          <path d="M24 12 L24 66 Q24 88 42 88 Q60 88 60 66 L60 12" />
+          <path d="M72 12 L72 66 Q72 88 90 88 Q108 88 108 66 L108 12" />
+        </svg>
+        <span>
+          <span class="wordmark">WAS</span>
+          <span class="tagline">SOLUÇÕES EM TECNOLOGIA</span>
+        </span>
+      </a>
+
+      <nav class="nav" data-nav aria-label="Principal">
+        <ul class="nav-links">
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#processo">Como trabalhamos</a></li>
+          <li><a href="#diferenciais">Diferenciais</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-btn" data-theme-toggle type="button" aria-label="Alternar tema">
+          <svg class="sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+            <circle cx="12" cy="12" r="4" /><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M19.1 4.9l-1.4 1.4M6.3 17.7l-1.4 1.4" />
+          </svg>
+          <svg class="moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z" />
+          </svg>
+        </button>
+        <a class="btn btn-primary" href="mailto:contato@was.dev.br">
+          <span class="header-cta-text">Fale com a gente</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <button class="nav-toggle" data-nav-toggle type="button" aria-label="Abrir menu" aria-expanded="false">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- ============================ HERO ============================ -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow">Desenvolvimento · IA · Automação</span>
+          <h1>Tecnologia que <span class="accent">trabalha</span> pela sua operação.</h1>
+          <p class="subhead">
+            Somos uma consultoria de desenvolvimento, inteligência artificial e
+            automação de processos. Desenhamos sistemas que fazem mais com menos —
+            inteligência real no uso dos seus recursos.
+          </p>
+          <div class="hero-cta">
+            <a class="btn btn-primary btn-lg" href="mailto:contato@was.dev.br?subject=Quero%20conversar%20com%20a%20WAS">
+              Começar um projeto
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+            <a class="btn btn-secondary btn-lg" href="#servicos">Ver serviços</a>
+          </div>
+          <div class="hero-meta">
+            <div class="stat"><div class="num">100%</div><div class="lbl">Sob medida para o seu processo</div></div>
+            <div class="stat"><div class="num">Dev + IA</div><div class="lbl">Engenharia e inteligência juntas</div></div>
+            <div class="stat"><div class="num">Ponta a ponta</div><div class="lbl">Da descoberta à operação</div></div>
+          </div>
+        </div>
+
+        <div class="hero-panel reveal" aria-hidden="true">
+          <div class="panel-bar">
+            <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+            <span class="title">was · pipeline de automação</span>
+          </div>
+          <div class="panel-body">
+            <div class="line"><span class="run">▸</span> <span class="kw">analisar</span> processo_manual.csv</div>
+            <div class="line"><span class="tick">✓</span> <span class="muted">3 gargalos identificados</span></div>
+            <div class="line"><span class="run">▸</span> <span class="kw">desenhar</span> fluxo automatizado</div>
+            <div class="line"><span class="tick">✓</span> <span class="muted">integração + agente de IA</span></div>
+            <div class="line"><span class="run">▸</span> <span class="kw">medir</span> ganho de eficiência</div>
+            <div class="line"><span class="tick">✓</span> <span class="muted">−72% horas operacionais</span></div>
+            <span class="pill">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+              Operação rodando no automático
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================== TRUSTBAR ======================== -->
+    <div class="trustbar">
+      <div class="container">
+        <span>Software sob medida</span>
+        <span>Agentes &amp; copilotos de IA</span>
+        <span>Automação de processos</span>
+        <span>Integrações de sistemas</span>
+        <span>Eficiência operacional</span>
+      </div>
+    </div>
+
+    <!-- ======================== SERVIÇOS ======================== -->
+    <section class="section" id="servicos">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">O que fazemos</span>
+          <h2 class="title">Quatro frentes, um objetivo: sua operação mais inteligente.</h2>
+          <p class="lead">Atuamos da estratégia à entrega. Combinamos engenharia de software, IA aplicada e automação para resolver o problema certo — não só escrever código.</p>
+        </div>
+
+        <div class="cards">
+          <article class="service-card reveal">
+            <span class="ico">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m8 18-6-6 6-6M16 6l6 6-6 6"/></svg>
+            </span>
+            <h3>Consultoria em Desenvolvimento</h3>
+            <p>Software bem arquitetado, do MVP ao produto em escala — com times que entendem o seu negócio, não só a stack.</p>
+            <ul>
+              <li>Aplicações web, APIs e back-ends</li>
+              <li>Arquitetura, code review e boas práticas</li>
+              <li>Modernização de sistemas legados</li>
+            </ul>
+          </article>
+
+          <article class="service-card reveal">
+            <span class="ico">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a4 4 0 0 1 4 4 4 4 0 0 1 0 8 4 4 0 0 1-8 0 4 4 0 0 1 0-8 4 4 0 0 1 4-4Z"/><path d="M12 6v12M8 10h8M8 14h8"/></svg>
+            </span>
+            <h3>Inteligência Artificial Aplicada</h3>
+            <p>IA que entrega valor de verdade: agentes, copilotos e modelos integrados aos seus dados e ao seu fluxo de trabalho.</p>
+            <ul>
+              <li>Agentes e assistentes com LLMs</li>
+              <li>Automação cognitiva e RAG sobre seus dados</li>
+              <li>Da prova de conceito à produção</li>
+            </ul>
+          </article>
+
+          <article class="service-card reveal">
+            <span class="ico">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v4M12 18v4M4.9 4.9l2.8 2.8M16.3 16.3l2.8 2.8M2 12h4M18 12h4M4.9 19.1l2.8-2.8M16.3 7.7l2.8-2.8"/><circle cx="12" cy="12" r="3"/></svg>
+            </span>
+            <h3>Automação de Processos</h3>
+            <p>Especialistas em tirar o trabalho repetitivo das mãos das pessoas. Mapeamos, automatizamos e medimos o ganho.</p>
+            <ul>
+              <li>Mapeamento e redesenho de fluxos</li>
+              <li>Integrações entre sistemas e ferramentas</li>
+              <li>Robôs, gatilhos e orquestração</li>
+            </ul>
+          </article>
+
+          <article class="service-card reveal">
+            <span class="ico">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m7 14 3-3 3 3 5-6"/></svg>
+            </span>
+            <h3>Inteligência no Uso de Recursos</h3>
+            <p>Mais resultado com menos custo. Otimizamos infraestrutura, tempo e processos para que cada recurso renda ao máximo.</p>
+            <ul>
+              <li>Eficiência operacional e de custos</li>
+              <li>Dados e indicadores para decidir</li>
+              <li>Escala sem desperdício</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================== PROCESSO ======================== -->
+    <section class="section" id="processo" style="background: var(--was-surface-2);">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Como trabalhamos</span>
+          <h2 class="title">Um método claro, do problema ao resultado medido.</h2>
+          <p class="lead">Sem promessas vagas. Cada etapa entrega algo concreto e mensurável.</p>
+        </div>
+
+        <div class="process">
+          <div class="step reveal">
+            <h4>Diagnóstico</h4>
+            <p>Entendemos o processo, os dados e onde está o desperdício antes de propor qualquer solução.</p>
+          </div>
+          <div class="step reveal">
+            <h4>Desenho</h4>
+            <p>Arquitetamos a solução — software, IA ou automação — focando no maior impacto com o menor esforço.</p>
+          </div>
+          <div class="step reveal">
+            <h4>Construção</h4>
+            <p>Implementamos em ciclos curtos, com entregas frequentes e visibilidade total do progresso.</p>
+          </div>
+          <div class="step reveal">
+            <h4>Operação</h4>
+            <p>Colocamos em produção, medimos o ganho real e seguimos evoluindo junto com o seu time.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================== DIFERENCIAIS ====================== -->
+    <section class="section" id="diferenciais">
+      <div class="container split">
+        <div class="reveal">
+          <span class="eyebrow">Por que a WAS</span>
+          <h2 class="title" style="font-family: var(--was-font-display); font-weight: var(--was-fw-bold); font-size: clamp(var(--was-fs-h2), 4.5vw, var(--was-fs-h1)); line-height:1.1; letter-spacing:-0.02em; margin-top: var(--was-space-4);">
+            Parceria de engenharia, não fornecedor de horas.
+          </h2>
+          <div class="feature-list">
+            <div class="feature">
+              <span class="ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 6v6c0 5 3.5 8 8 10 4.5-2 8-5 8-10V6l-8-4Z"/><path d="m9 12 2 2 4-4"/></svg></span>
+              <div><h4>Resultado acima de entregável</h4><p>Medimos sucesso pelo impacto no seu negócio — tempo economizado, custo reduzido, processo mais fluido.</p></div>
+            </div>
+            <div class="feature">
+              <span class="ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a4 4 0 0 1 4 4 4 4 0 0 1 0 8 4 4 0 0 1-8 0 4 4 0 0 1 0-8 4 4 0 0 1 4-4Z"/></svg></span>
+              <div><h4>IA com pé no chão</h4><p>Aplicamos inteligência artificial onde ela realmente resolve — sem modismo, com retorno claro.</p></div>
+            </div>
+            <div class="feature">
+              <span class="ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v4M12 18v4M2 12h4M18 12h4"/><circle cx="12" cy="12" r="3"/></svg></span>
+              <div><h4>Eficiência por princípio</h4><p>Cada decisão técnica considera o melhor uso de recursos: infraestrutura enxuta, código sustentável.</p></div>
+            </div>
+            <div class="feature">
+              <span class="ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13A4 4 0 0 1 16 11"/></svg></span>
+              <div><h4>Time perto do seu time</h4><p>Comunicação direta, sem camadas. Você fala com quem constrói.</p></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="metric-stack reveal">
+          <div class="metric-card">
+            <div class="metric-value">−70%</div>
+            <div class="metric-label">de tempo gasto em tarefas repetitivas após automação</div>
+          </div>
+          <div class="metric-grid-2">
+            <div class="metric-card">
+              <div class="metric-value">24/7</div>
+              <div class="metric-label">processos rodando sem intervenção manual</div>
+            </div>
+            <div class="metric-card">
+              <div class="metric-value">+IA</div>
+              <div class="metric-label">decisões apoiadas por inteligência sobre seus dados</div>
+            </div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-value">1 foco</div>
+            <div class="metric-label">fazer sua operação render mais com os recursos que já existem</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================= CONTATO ========================= -->
+    <section class="section" id="contato">
+      <div class="container">
+        <div class="cta reveal">
+          <span class="eyebrow">Vamos conversar</span>
+          <h2>Tem um processo que poderia ser mais inteligente?</h2>
+          <p>Conte pra gente o desafio. Respondemos com um diagnóstico inicial e os próximos passos — sem compromisso.</p>
+          <div class="cta-actions">
+            <a class="btn btn-primary btn-lg" href="mailto:contato@was.dev.br?subject=Contato%20pelo%20site%20-%20WAS">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16v16H4z" opacity="0"/><path d="M22 6 12 13 2 6"/><rect x="2" y="4" width="20" height="16" rx="2"/></svg>
+              contato@was.dev.br
+            </a>
+          </div>
+          <p class="note">E-mail é o nosso canal oficial de contato — escreva quando quiser.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================= FOOTER ========================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="about">
+          <a class="brand-lockup" href="#top" aria-label="WAS — Soluções em Tecnologia">
+            <svg viewBox="0 0 132 110" height="30" width="36" fill="none" stroke="currentColor"
+                 stroke-width="20" stroke-linejoin="round" role="img" aria-hidden="true">
+              <path d="M24 12 L24 66 Q24 88 42 88 Q60 88 60 66 L60 12" />
+              <path d="M72 12 L72 66 Q72 88 90 88 Q108 88 108 66 L108 12" />
+            </svg>
+            <span><span class="wordmark">WAS</span><span class="tagline">SOLUÇÕES EM TECNOLOGIA</span></span>
+          </a>
+          <p>Consultoria em desenvolvimento, inteligência artificial e automação de processos. Inteligência no uso de recursos para fazer sua operação render mais.</p>
+        </div>
+
+        <div class="footer-col">
+          <h5>Serviços</h5>
+          <ul>
+            <li><a href="#servicos">Desenvolvimento</a></li>
+            <li><a href="#servicos">Inteligência Artificial</a></li>
+            <li><a href="#servicos">Automação de Processos</a></li>
+            <li><a href="#servicos">Eficiência de Recursos</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Contato</h5>
+          <ul>
+            <li><a href="mailto:contato@was.dev.br">contato@was.dev.br</a></li>
+            <li><a href="https://was.dev.br">was.dev.br</a></li>
+            <li><a href="#contato">Iniciar um projeto</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> WAS — Soluções em Tecnologia. Todos os direitos reservados.</span>
+        <span>was.dev.br · contato@was.dev.br</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="scripts/main.js"></script>
+</body>
+</html>

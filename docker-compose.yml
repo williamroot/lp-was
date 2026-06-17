@@ -1,0 +1,33 @@
+services:
+  # Servidor web da landing page (nginx estático)
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: was-lp
+    expose:
+      - "80"
+    ports:
+      # Acesso local/direto opcional (a publicação real é via Cloudflare Tunnel).
+      - "8080:80"
+    restart: unless-stopped
+    networks:
+      - was-lp-net
+
+  # Cloudflare Tunnel — publica o site sem abrir portas no servidor.
+  # Defina TUNNEL_TOKEN no arquivo .env (copie de .env.example).
+  cloudflared:
+    image: cloudflare/cloudflared:latest
+    container_name: was-lp-tunnel
+    command: tunnel --no-autoupdate run
+    environment:
+      - TUNNEL_TOKEN=${TUNNEL_TOKEN}
+    depends_on:
+      - web
+    restart: unless-stopped
+    networks:
+      - was-lp-net
+
+networks:
+  was-lp-net:
+    driver: bridge
