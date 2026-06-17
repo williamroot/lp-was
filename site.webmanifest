@@ -1,0 +1,27 @@
+{
+  "name": "WAS — Soluções em Tecnologia",
+  "short_name": "WAS",
+  "description": "Consultoria em desenvolvimento de software, inteligência artificial e automação de processos.",
+  "lang": "pt-BR",
+  "dir": "ltr",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "theme_color": "#2F5BFF",
+  "background_color": "#0A0B0D",
+  "icons": [
+    {
+      "src": "/assets/favicon.svg",
+      "type": "image/svg+xml",
+      "sizes": "any",
+      "purpose": "any"
+    },
+    {
+      "src": "/assets/apple-touch-icon.png",
+      "type": "image/png",
+      "sizes": "180x180",
+      "purpose": "any maskable"
+    }
+  ]
+}

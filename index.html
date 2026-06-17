@@ -3,19 +3,50 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>WAS — Soluções em Tecnologia · Consultoria em Desenvolvimento, IA e Automação</title>
-  <meta name="description" content="WAS Soluções em Tecnologia: consultoria em desenvolvimento de software, inteligência artificial e automação de processos. Transformamos operações em sistemas inteligentes e eficientes." />
+
+  <!-- Primary meta -->
+  <title>WAS — Consultoria em Desenvolvimento, IA e Automação</title>
+  <meta name="description" content="Há mais de 10 anos ajudando empresas a usar a tecnologia de forma inteligente e eficiente: consultoria em desenvolvimento, inteligência artificial e automação de processos." />
+  <meta name="keywords" content="consultoria de software, desenvolvimento sob medida, inteligência artificial, automação de processos, agentes de IA, eficiência operacional, WAS" />
+  <meta name="author" content="WAS — Soluções em Tecnologia" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <meta name="language" content="pt-BR" />
+  <meta http-equiv="content-language" content="pt-BR" />
   <meta name="theme-color" content="#2F5BFF" />
+
+  <!-- Geo (Brasil) -->
+  <meta name="geo.region" content="BR" />
+  <meta name="geo.placename" content="Brasil" />
+
   <link rel="canonical" href="https://was.dev.br/" />
+
+  <!-- Icons & manifest -->
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
-  <meta property="og:image" content="https://was.dev.br/assets/favicon.svg" />
+  <link rel="icon" type="image/png" sizes="180x180" href="assets/apple-touch-icon.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png" />
+  <link rel="mask-icon" href="assets/favicon.svg" color="#2F5BFF" />
+  <link rel="manifest" href="site.webmanifest" />
 
   <!-- Open Graph -->
+  <meta property="og:site_name" content="WAS — Soluções em Tecnologia" />
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="WAS — Soluções em Tecnologia" />
-  <meta property="og:description" content="Consultoria em desenvolvimento, IA e automação de processos. Inteligência no uso de recursos." />
+  <meta property="og:title" content="WAS — Consultoria em Desenvolvimento, IA e Automação" />
+  <meta property="og:description" content="Há mais de 10 anos ajudando empresas a usar a tecnologia de forma inteligente e eficiente: desenvolvimento, inteligência artificial e automação de processos." />
   <meta property="og:url" content="https://was.dev.br/" />
   <meta property="og:locale" content="pt_BR" />
+  <meta property="og:image" content="https://was.dev.br/assets/og-image.png" />
+  <meta property="og:image:secure_url" content="https://was.dev.br/assets/og-image.png" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="WAS — Soluções em Tecnologia: tecnologia que trabalha pela sua operação." />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="WAS — Consultoria em Desenvolvimento, IA e Automação" />
+  <meta name="twitter:description" content="Há mais de 10 anos ajudando empresas a usar a tecnologia de forma inteligente e eficiente: desenvolvimento, IA e automação de processos." />
+  <meta name="twitter:image" content="https://was.dev.br/assets/og-image.png" />
+  <meta name="twitter:image:alt" content="WAS — Soluções em Tecnologia" />
 
   <!-- Fonts + tokens (espelho do was-design-system) -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -39,19 +70,95 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "WAS — Soluções em Tecnologia",
-    "url": "https://was.dev.br",
-    "email": "contato@was.dev.br",
-    "description": "Consultoria em desenvolvimento de software, inteligência artificial e automação de processos.",
-    "contactPoint": {
-      "@type": "ContactPoint",
-      "email": "contato@was.dev.br",
-      "contactType": "comercial",
-      "availableLanguage": ["Portuguese"]
-    }
+    "@graph": [
+      {
+        "@type": ["Organization", "ProfessionalService"],
+        "@id": "https://was.dev.br/#organization",
+        "name": "WAS — Soluções em Tecnologia",
+        "alternateName": "WAS",
+        "url": "https://was.dev.br/",
+        "email": "contato@was.dev.br",
+        "image": "https://was.dev.br/assets/og-image.png",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://was.dev.br/assets/favicon.svg"
+        },
+        "description": "Há mais de 10 anos ajudando empresas a fazer uso inteligente e eficiente da tecnologia em prol do seu negócio: consultoria em desenvolvimento de software, inteligência artificial e automação de processos.",
+        "slogan": "Inteligência no uso de recursos.",
+        "areaServed": {
+          "@type": "Country",
+          "name": "Brasil"
+        },
+        "knowsLanguage": "pt-BR",
+        "knowsAbout": [
+          "Desenvolvimento de software",
+          "Inteligência artificial aplicada",
+          "Agentes e copilotos de IA",
+          "Automação de processos",
+          "Integração de sistemas",
+          "Eficiência operacional"
+        ],
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "email": "contato@was.dev.br",
+          "contactType": "comercial",
+          "areaServed": "BR",
+          "availableLanguage": ["Portuguese"]
+        },
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Serviços WAS",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Consultoria em Desenvolvimento",
+                "description": "Software bem arquitetado, do MVP ao produto em escala — aplicações web, APIs, back-ends e modernização de sistemas legados."
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Inteligência Artificial Aplicada",
+                "description": "Agentes, copilotos e modelos integrados aos seus dados e fluxo de trabalho, da prova de conceito à produção."
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Automação de Processos",
+                "description": "Mapeamento e redesenho de fluxos, integrações entre sistemas e orquestração para eliminar trabalho repetitivo."
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Inteligência no Uso de Recursos",
+                "description": "Eficiência operacional e de custos: mais resultado com menos, escala sem desperdício."
+              }
+            }
+          ]
+        }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://was.dev.br/#website",
+        "url": "https://was.dev.br/",
+        "name": "WAS — Soluções em Tecnologia",
+        "description": "Consultoria em desenvolvimento de software, inteligência artificial e automação de processos.",
+        "inLanguage": "pt-BR",
+        "publisher": { "@id": "https://was.dev.br/#organization" }
+      }
+    ]
   }
   </script>
+
+  <!-- Data Reveal -->
+  <script src="https://c.dstrack.co/api/analytics/bootloader/modular/?site=2AE16PYXQH" async></script>
 </head>
 <body>
   <!-- ============================ HEADER ============================ -->
@@ -103,12 +210,12 @@
     <section class="hero">
       <div class="container hero-grid">
         <div class="hero-copy">
-          <span class="eyebrow">Desenvolvimento · IA · Automação</span>
+          <span class="eyebrow">+10 anos · Desenvolvimento · IA · Automação</span>
           <h1>Tecnologia que <span class="accent">trabalha</span> pela sua operação.</h1>
           <p class="subhead">
-            Somos uma consultoria de desenvolvimento, inteligência artificial e
-            automação de processos. Desenhamos sistemas que fazem mais com menos —
-            inteligência real no uso dos seus recursos.
+            Há mais de 10 anos ajudamos empresas a fazer uso inteligente e eficiente da
+            tecnologia em prol do seu negócio — com consultoria em desenvolvimento,
+            inteligência artificial e automação de processos.
           </p>
           <div class="hero-cta">
             <a class="btn btn-primary btn-lg" href="mailto:contato@was.dev.br?subject=Quero%20conversar%20com%20a%20WAS">
@@ -118,7 +225,7 @@
             <a class="btn btn-secondary btn-lg" href="#servicos">Ver serviços</a>
           </div>
           <div class="hero-meta">
-            <div class="stat"><div class="num">100%</div><div class="lbl">Sob medida para o seu processo</div></div>
+            <div class="stat"><div class="num">+10 anos</div><div class="lbl">de experiência ajudando empresas</div></div>
             <div class="stat"><div class="num">Dev + IA</div><div class="lbl">Engenharia e inteligência juntas</div></div>
             <div class="stat"><div class="num">Ponta a ponta</div><div class="lbl">Da descoberta à operação</div></div>
           </div>
@@ -259,6 +366,10 @@
           <h2 class="title" style="font-family: var(--was-font-display); font-weight: var(--was-fw-bold); font-size: clamp(var(--was-fs-h2), 4.5vw, var(--was-fs-h1)); line-height:1.1; letter-spacing:-0.02em; margin-top: var(--was-space-4);">
             Parceria de engenharia, não fornecedor de horas.
           </h2>
+          <p class="lead" style="color: var(--was-fg-muted); font-size: var(--was-fs-body-lg); margin-top: var(--was-space-4);">
+            Mais de uma década ajudando empresas a usar a tecnologia com inteligência
+            e eficiência — da estratégia à operação em produção.
+          </p>
           <div class="feature-list">
             <div class="feature">
               <span class="ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 6v6c0 5 3.5 8 8 10 4.5-2 8-5 8-10V6l-8-4Z"/><path d="m9 12 2 2 4-4"/></svg></span>
@@ -290,8 +401,8 @@
               <div class="metric-label">processos rodando sem intervenção manual</div>
             </div>
             <div class="metric-card">
-              <div class="metric-value">+IA</div>
-              <div class="metric-label">decisões apoiadas por inteligência sobre seus dados</div>
+              <div class="metric-value">+10 anos</div>
+              <div class="metric-label">de experiência no mercado de tecnologia</div>
             </div>
           </div>
           <div class="metric-card">
@@ -334,7 +445,7 @@
             </svg>
             <span><span class="wordmark">WAS</span><span class="tagline">SOLUÇÕES EM TECNOLOGIA</span></span>
           </a>
-          <p>Consultoria em desenvolvimento, inteligência artificial e automação de processos. Inteligência no uso de recursos para fazer sua operação render mais.</p>
+          <p>Há mais de 10 anos em consultoria de desenvolvimento, inteligência artificial e automação de processos — inteligência no uso de recursos para fazer sua operação render mais.</p>
         </div>
 
         <div class="footer-col">

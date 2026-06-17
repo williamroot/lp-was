@@ -1,0 +1,7 @@
+# robots.txt — WAS — Soluções em Tecnologia
+# https://was.dev.br/
+
+User-agent: *
+Allow: /
+
+Sitemap: https://was.dev.br/sitemap.xml
